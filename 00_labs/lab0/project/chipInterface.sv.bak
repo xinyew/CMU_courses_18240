@@ -1,0 +1,6 @@
+`default_nettype none
+module chipInterface
+  (input  logic SW  [17:0],
+   output logic LEDR[17:0]);
+	
+  multiplexer 
