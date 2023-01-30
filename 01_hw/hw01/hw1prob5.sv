@@ -30,9 +30,11 @@ module hw1prob5
    or  #2 g18(notA_or_notB_or_C, notA, notB, C);
 
    or  #2 g10(Fsop, notA_and_notC, A_and_notB_and_C);
-   or  #2 g11(Gsop, A_and_notB_and_notC, notA_and_notB_and_C, A_and_B_and_C, notA_and_B_and_notC);
+   or  #2 g11(Gsop, A_and_notB_and_notC, notA_and_notB_and_C,
+              A_and_B_and_C, notA_and_B_and_notC);
 
    and #2 g19(Fpos, A_or_notC, notA_or_C, notB_or_notC);
-   and #2 g20(Gpos, A_or_B_or_C, notA_or_B_or_notC, A_or_notB_or_notC,notA_or_notB_or_C);
+   and #2 g20(Gpos, A_or_B_or_C, notA_or_B_or_notC,
+              A_or_notB_or_notC,notA_or_notB_or_C);
 
 endmodule: hw1prob5
