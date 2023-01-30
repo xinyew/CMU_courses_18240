@@ -30,7 +30,8 @@ module testbench();
               );
 
   initial begin
-    $monitor("A: %b B: %b C: %b D: %b F: %b at time %d", vector[3], vector[2], vector[1], vector[0], f, $time);
+    $monitor("A: %b B: %b C: %b D: %b F: %b at time %d",
+     vector[3], vector[2], vector[1], vector[0], f, $time);
           vector[3] = 0;
           vector[2] = 0;
           vector[1] = 0;

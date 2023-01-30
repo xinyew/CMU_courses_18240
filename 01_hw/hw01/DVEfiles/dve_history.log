@@ -1,0 +1,140 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_sim_continue  
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Source.1 { testbench } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 193
+gui_wv_zoom_timerange -id  Wave.1 0 250
+gui_wv_zoom_timerange -id  Wave.1 0 310
+gui_wv_zoom_timerange -id  Wave.1 0 345
+gui_wv_zoom_timerange -id  Wave.1 0 346
+gui_wv_zoom_timerange -id  Wave.1 0 346
+gui_wv_zoom_timerange -id  Wave.1 0 348
+gui_wv_zoom_timerange -id  Wave.1 0 375
+gui_wv_zoom_timerange -id  Wave.1 0 413
+gui_wv_zoom_timerange -id  Wave.1 0 427
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 142
+gui_wv_zoom_timerange -id  Wave.1 71 108
+gui_sim_continue  
+gui_wv_zoom_timerange -id  Wave.1 301 347
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9638
+gui_wv_scroll_hslidermove -id  Wave.1 9407
+gui_wv_scroll_hslidermove -id  Wave.1 8945
+gui_wv_scroll_hslidermove -id  Wave.1 8714
+gui_wv_scroll_hslidermove -id  Wave.1 8483
+gui_wv_scroll_hslidermove -id  Wave.1 8252
+gui_wv_scroll_hslidermove -id  Wave.1 8483
+gui_wv_scroll_hslidermove -id  Wave.1 8714
+gui_wv_scroll_hslidermove -id  Wave.1 8945
+gui_wv_scroll_hslidermove -id  Wave.1 9176
+gui_wv_scroll_hslidermove -id  Wave.1 9407
+gui_wv_scroll_hslidermove -id  Wave.1 9638
+gui_wv_scroll_hslidermove -id  Wave.1 9407
+gui_wv_scroll_hslidermove -id  Wave.1 9176
+gui_wv_scroll_hslidermove -id  Wave.1 8945
+gui_wv_scroll_hslidermove -id  Wave.1 8714
+gui_wv_scroll_hslidermove -id  Wave.1 8483
+gui_wv_scroll_hslidermove -id  Wave.1 8252
+gui_wv_scroll_hslidermove -id  Wave.1 7559
+gui_wv_scroll_hslidermove -id  Wave.1 7328
+gui_wv_scroll_hslidermove -id  Wave.1 7097
+gui_wv_scroll_hslidermove -id  Wave.1 8252
+gui_wv_scroll_hslidermove -id  Wave.1 8714
+gui_wv_scroll_hslidermove -id  Wave.1 8945
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_wv_scroll_hslidermove -id  Wave.1 9869
+gui_marker_move -id  Wave.1 C1 304
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 307
+gui_marker_move -id  Wave.1 C1 313
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9455
+gui_wv_scroll_hslidermove -id  Wave.1 9224
+gui_wv_scroll_hslidermove -id  Wave.1 8993
+gui_wv_scroll_hslidermove -id  Wave.1 8762
+gui_wv_scroll_hslidermove -id  Wave.1 8531
+gui_wv_scroll_hslidermove -id  Wave.1 8762
+gui_wv_scroll_hslidermove -id  Wave.1 9224
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_marker_move -id  Wave.1 C1 302
+gui_marker_move -id  Wave.1 C1 305
+gui_marker_move -id  Wave.1 C1 306
+gui_list_expand -id  Wave.1   {testbench.vector[3:0]}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 5557
+gui_wv_scroll_hslidermove -id  Wave.1 5788
+gui_wv_scroll_hslidermove -id  Wave.1 6712
+gui_wv_scroll_hslidermove -id  Wave.1 6943
+gui_wv_scroll_hslidermove -id  Wave.1 7405
+gui_wv_scroll_hslidermove -id  Wave.1 8098
+gui_wv_scroll_hslidermove -id  Wave.1 8560
+gui_wv_scroll_hslidermove -id  Wave.1 8791
+gui_wv_scroll_hslidermove -id  Wave.1 9253
+gui_wv_scroll_hslidermove -id  Wave.1 9484
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9455
+gui_wv_scroll_hslidermove -id  Wave.1 8993
+gui_wv_scroll_hslidermove -id  Wave.1 8300
+gui_wv_scroll_hslidermove -id  Wave.1 8762
+gui_wv_scroll_hslidermove -id  Wave.1 8531
+gui_wv_scroll_hslidermove -id  Wave.1 8300
+gui_wv_scroll_hslidermove -id  Wave.1 8069
+gui_wv_scroll_hslidermove -id  Wave.1 8300
+gui_wv_scroll_hslidermove -id  Wave.1 8993
+gui_wv_scroll_hslidermove -id  Wave.1 9224
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 9686
+gui_wv_scroll_hslidermove -id  Wave.1 8127
+gui_wv_scroll_hslidermove -id  Wave.1 6568
+gui_wv_scroll_hslidermove -id  Wave.1 5009
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 331
+gui_marker_move -id  Wave.1 C1 321
+gui_close_window -window TopLevel.2
