@@ -1,5 +1,5 @@
 0 
-24
+23
 -Mamsrun=
 -Masflags=
 -Mcc=gcc
@@ -22,14 +22,13 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-SevenSegmentDisplay_test.sv
-hw2prob9.sv
+hw2prob3.sv
 57
 no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
 ftp_proxy=http://proximus.ece.cmu.edu:3128/
-XDG_SESSION_ID=63090
+XDG_SESSION_ID=51161
 XDG_RUNTIME_DIR=/run/user/2673167
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr24/xinyew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 VMR_MODE_FLAG=32
@@ -48,9 +47,9 @@ UNAME=/bin/uname
 TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_TTY=/dev/pts/2
-SSH_CONNECTION=128.2.13.174 55476 172.19.138.18 22
-SSH_CLIENT=128.2.13.174 55476 22
+SSH_TTY=/dev/pts/0
+SSH_CONNECTION=128.2.13.157 56278 172.19.138.15 22
+SSH_CLIENT=128.2.13.157 56278 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
@@ -84,13 +83,12 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-2
-1675715482 hw2prob9.sv
-1675713870 SevenSegmentDisplay_test.sv
+1
+1675718070 hw2prob3.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1675715485 simv.daidir
+1675718090 simv.daidir
 -1 partitionlib
