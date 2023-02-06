@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1675713886.752230643, "rt":0.12, "ut":0.06, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1675713886.535922618}
+{"VCS_COMP_START_TIME": 1675713886.535922618}
+{"VCS_COMP_END_TIME": 1675713886.911871468}
+{"VCS_USER_OPTIONS": "-sverilog -nc BCDtoSevenDisplay_test.sv hw2prob9.sv"}
+{"vcs1": {"peak_mem": 321752}}

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1675705983.461177979, "rt":0.26, "ut":0.10, "st":0.08}}
+{"vcselab":{"timestamp_begin":1675705983.755357642, "rt":0.25, "ut":0.15, "st":0.04}}
+{"link":{"timestamp_begin":1675705984.027088429, "rt":0.23, "ut":0.08, "st":0.11}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1675705983.264622114}
+{"VCS_COMP_START_TIME": 1675705983.264622114}
+{"VCS_COMP_END_TIME": 1675705984.295739310}
+{"VCS_USER_OPTIONS": "-sverilog -nc hw2prob2.sv"}
+{"vcs1": {"peak_mem": 336156}}
+{"stitch_vcselab": {"peak_mem": 222560}}
