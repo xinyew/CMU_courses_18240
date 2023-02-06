@@ -21,7 +21,7 @@ module SevenSegmentDisplay
         4'd9: HEX0 = 7'b1101111;
         default: HEX0 = 7'b0000000;
       endcase
-      HEX0 = ~HEX0;
+    HEX0 = ~HEX0;
   end
 
   always_comb begin
@@ -40,7 +40,7 @@ module SevenSegmentDisplay
         4'd9: HEX1 = 7'b1101111;
         default: HEX1 = 7'b0000000;
       endcase
-      HEX1 = ~HEX1;
+    HEX1 = ~HEX1;
   end
 
   always_comb begin
