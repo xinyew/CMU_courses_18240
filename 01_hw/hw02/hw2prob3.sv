@@ -8,7 +8,8 @@ module hw2prob3
                  || {a, b, c, d} == 4'd13 || {a, b, c, d} == 4'd5
                  || {a, b, c, d} == 4'd8 || {a, b, c, d} == 4'd15;
 
-  assign l_assign_min = {b, d} == 2'b11 || {a, d} == 2'b00 || {a, b, d} == 3'b100;
+  assign l_assign_min = {b, d} == 2'b11 || {a, d} == 2'b00
+                     || {a, b, d} == 3'b100;
 
   always_comb
     unique case ({a, b, c, d})
