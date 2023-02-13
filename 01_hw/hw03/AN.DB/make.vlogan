@@ -1,0 +1,17 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -sverilog -full64
+
+all :		_VCSgd_2XDtbb_1.db \
+	_VCSgd_waFODe_1.db \
+
+
+
+_VCSgd_2XDtbb_1.db :	library.sv 
+		${VLOGAN}  ${VLOGAN_OPT} library.sv
+
+
+_VCSgd_waFODe_1.db :	library_tests.sv 
+		${VLOGAN}  ${VLOGAN_OPT} library_tests.sv
+
+
