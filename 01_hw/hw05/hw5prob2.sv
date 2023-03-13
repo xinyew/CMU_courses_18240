@@ -10,7 +10,7 @@ module hw5prob2_test();
                .water(water));
 
   initial begin
-    $monitor($time,, "state = %s, nextState = %s, in(%b%b), out(%b), reset_n(%b)",
+    $monitor($time,, "state: %s, nextState: %s, in: %b%b, out: %b, reset_n: %b",
              dut.state.name, dut.nextState.name, hue, value, water, reset_n);
     // init -> Red
     clock = 0;
@@ -51,7 +51,7 @@ module hw5prob2_test();
     // Green Reset
     #1 reset_n = 1'b0; // Green + Reset -> Red
     #1 reset_n = 1'b1; // release reset
-    
+
     // Red Reset
     #1 reset_n = 1'b0; // Red + Reset -> Red
     #1 reset_n = 1'b1; // release reset

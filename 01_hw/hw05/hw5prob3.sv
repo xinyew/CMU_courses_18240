@@ -7,11 +7,11 @@ module hw5prob3_test();
                .clock(clock),
                .reset(reset),
                .got_em_all(got_em_all));
-    
+
   initial begin
-    $monitor($time,, "state = %s, nextState = %s, out(%b), in(%b%b), reset(%b)",
+    $monitor($time,, "state: %s, nextState: %s, out: %b, in: %b%b, reset: %b",
              dut.state.name, dut.nextState.name, got_em_all, gym, trainer, reset);
-    // init 
+    // init
     clock = 1'b0;
     reset = 1'b1;
     reset <= 1'b0;

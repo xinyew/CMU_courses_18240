@@ -1,0 +1,18 @@
+********************************************************************************
+*                                  18240: hw5                                  *
+*                            Error log for: xinyew                             *
+********************************************************************************
+********************************** Problem 3 ***********************************
+hw5prob3.sv, hw5prob3_handout.sv: failed to compile
+
+Error-[USL] Unterminated string literal
+/afs/andrew.cmu.edu/usr24/xinyew/private/18240/01_hw/hw05/hw5prob3.sv, 12
+hw5prob3_test
+  A string literal must be contained within double quotes in a single line 
+  unless the end of the line is terminated by a \(back slash).
+  Check for either the missing terminating double quotes or the continuation 
+  back slash.
+
+1 error
+
+
