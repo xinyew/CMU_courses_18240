@@ -1,0 +1,18 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar 12 13:51 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr24/xinyew/private/18240/01_hw/hw05/inter.vpd' was opened successfully.
+                   0 state = Red, nextState = Pink, in(00), out(0), reset_n(1)
+                  10 state = Pink, nextState = Blue, in(00), out(0), reset_n(1)
+                  30 state = Blue, nextState = Blue, in(01), out(1), reset_n(1)
+                  55 state = Red, nextState = Gold, in(01), out(0), reset_n(0)
+                  61 state = Red, nextState = Gold, in(01), out(0), reset_n(1)
+                  70 state = Gold, nextState = Green, in(01), out(0), reset_n(1)
+$finish called from file "hw5prob2.sv", line 37.
+$finish at simulation time                   71
+Simulation complete, time is 71.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 71
+CPU Time:      0.280 seconds;       Data structure size:   0.0Mb
+Sun Mar 12 15:27:29 2023

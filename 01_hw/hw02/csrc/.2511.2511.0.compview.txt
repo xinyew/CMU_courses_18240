@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1675983613.452575874, "rt":0.11, "ut":0.06, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1675983613.201000549}
+{"VCS_COMP_START_TIME": 1675983613.201000549}
+{"VCS_COMP_END_TIME": 1675983613.595418962}
+{"VCS_USER_OPTIONS": "-sverilog -nv backup.sv SevenSegmentDisplay_test.sv"}

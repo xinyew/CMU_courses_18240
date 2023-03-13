@@ -1,0 +1,45 @@
+13:51:24    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 26796 -toolin /tmp/vcs_20230312175121_26795_xinyew..stdin -toolout /tmp/vcs_20230312175121_26795_xinyew..stdout  
+13:51:24    17 -->                                                                 [tcl] set ucliGUI::state
+13:51:25    18 -->                                                                     [tcl] set ucliGUI::state
+13:51:25    19 -->                                                                         [tcl] ucliCore::getToolPID
+13:51:25    20 -->                                                                             [tcl] synopsys::env hasTB
+13:51:25    21 -->                                                                                 [tcl] trigger_hier_stack_context_switch 0
+13:51:25    22 -->                                                                                     [tcl] synUtils::setDVEInitPhase 1
+13:51:25    23 -->                                                                                         [tcl] gui_get_env SIMSETUP::SIMVPD
+13:51:25    24 -->                                                                                             [tcl] synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr24/xinyew/private/18240/01_hw/hw05/inter.vpd -locking
+13:51:25    25 --> ...  [tcl] synopsys::dump -autoflush on -fid VPD0
+13:51:25    26 --> ...      [tcl] set ::dve_fid VPD0
+13:51:25    27 --> ...          [tcl] synUtils::setDVEInitPhase 0
+13:51:25    28 --> ...              [tcl] ucliCore::getToolPID
+13:51:25    29 --> ...                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpo1D6YC
+13:51:25    30 --> ...                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.xinyew.26796}
+13:51:26    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.xinyew.26796}
+13:51:26    32 --> ...                              [tcl] dveMisc::vbusExpand hw5prob2_test
+13:51:26    33 --> ...                                  [tcl] config endofsim noexit
+13:51:26    34 --> ...                                      [tcl] config onfail enable all
+13:51:26    35 --> ...                                          [tcl] config syscaddplainmembers
+13:51:26    36 --> ...                                              [tcl] config syscaddsourcenames
+13:51:26    37 --> ...                                                  [tcl] config syscaddstructtypes
+13:51:26    38 --> ...                                                      [tcl] synopsys::listing -disable
+13:51:32    39 --> ...                                                          [tcl] ucliGUI::vpdAddHierarchy -scope hw5prob2_test -depth 1 -file /afs/andrew.cmu.edu/usr24/xinyew/private/18240/01_hw/hw05/inter.vpd; synopsys::dump -flush VPD0
+13:51:32    40 --> ...                                                              [tcl] synopsys::dump -add {hw5prob2_test.clock hw5prob2_test.hue hw5prob2_test.reset_n hw5prob2_test.value hw5prob2_test.water } -aggregates  -fid VPD0
+13:51:34    41 --> ...                                                                  [tcl] synopsys::run
+13:51:34    42 --> ...                                                                      [tcl] set ucliGUI::state
+13:51:34    43 --> ...                                                                          [tcl] gui_update_simulator_buttons
+13:51:34    44 --> ...                                                                              [tcl] set ucliGUI::state
+13:51:34    45 --> ...                                                                                  [tcl] set ucliGUI::state
+13:51:34    46 --> ...                                                                                      [tcl] set ucliGUI::state
+13:51:34    47 --> ...                                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+13:51:34    48 --> ...                                                                                              [tcl] set dveMisc::result
+13:51:34    49 --> ...                                                                                                  [tcl] gui_update_simulator_buttons
+15:27:29    50 --> ...  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+15:27:29    51 --> ...      [tcl] synopsys::finish
+15:27:29    52 --> ...          [tcl] set ucliGUI::state
+15:27:29    53 --> ...              [tcl] gui_update_simulator_buttons
+15:27:30    54 --> ...                  [tcl] set ucliGUI::state
+15:27:30    55 --> ...                      [tcl] catch {senv activeDomain} dveMisc::result 
+15:27:30    56 --> ...                          [tcl] set dveMisc::result
+15:27:30    57 --> ...                              [tcl] gui_update_simulator_buttons
+15:27:30    58 --> ...                                  [tcl] catch {senv activeDomain} dveMisc::result 
+15:27:30    59 --> ...                                      [tcl] set dveMisc::result
+15:27:30    60 --> ...                                          [tcl] ucli_exit
