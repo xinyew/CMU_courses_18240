@@ -5,71 +5,11 @@
         "module",
         1
     ],
-    "hw6prob3": [
-        "hw6prob3",
-        "IqPi4",
+    "ShiftRegister_SIPO_test": [
+        "ShiftRegister_SIPO_test",
+        "cmWhz",
         "module",
-        2
-    ],
-    "MagComp": [
-        "MagComp",
-        "vaLRj",
-        "module",
-        5
-    ],
-    "Multiplexer": [
-        "Multiplexer",
-        "UxyT3",
-        "module",
-        6
-    ],
-    "Mux2to1": [
-        "Mux2to1",
-        "wxUbx",
-        "module",
-        7
-    ],
-    "Decoder": [
-        "Decoder",
-        "t8TcA",
-        "module",
-        8
-    ],
-    "DFlipFlop": [
-        "DFlipFlop",
-        "NafP4",
-        "module",
-        9
-    ],
-    "Counter": [
-        "Counter",
-        "Nsh6f",
-        "module",
-        10
-    ],
-    "Synchronizer": [
-        "Synchronizer",
-        "mLbx7",
-        "module",
-        11
-    ],
-    "ShiftRegister_SIPO": [
-        "ShiftRegister_SIPO",
-        "ckLmD",
-        "module",
-        12
-    ],
-    "ShiftRegister_PIPO": [
-        "ShiftRegister_PIPO",
-        "yK5FF",
-        "module",
-        13
-    ],
-    "BarrelShiftRegister": [
-        "BarrelShiftRegister",
-        "ts568",
-        "module",
-        14
+        4
     ],
     "...MASTER...": [
         "SIM",
