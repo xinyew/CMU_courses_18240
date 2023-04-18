@@ -7,15 +7,15 @@ START   LW      r1, r0, $2000   ; r1 = len(array), for counting loops
 
 LOOP    SLT     r0, r0, r1      
         BRZ     DONE            ; if r1 == 0, done
-        LW      r4, r3, $2002   ; r4 = M[r3 + 2002], tmp var storing array elements
+        LW      r4, r3, $2002   ; r4 = M[r3 + 2002], tmp var storing values 
         LI      r7, $4          ; r7 = 4, for testing whether to round
-        AND     r5, r4, r7      ; r5 = r4 & r7, tmp var storing camparison results
+        AND     r5, r4, r7      ; r5 = r4 & r7, tmp var storing camparison
         BRZ     MODIFY          ; if the 3rd LSB is 0, do the branching
         ADDI    r4, r4, $8      ; otherwise add 8 to the array element
 
-MODIFY  AND     r4, r4, r2      ; r4 = r4 & r7, check all bits other than the 3 LSBs
-        BRN     NEG             ; if negative, branching to negative processing before round processing
-        BRA     STORE           ; if positive, branching to round processing directly
+MODIFY  AND     r4, r4, r2      ; check all bits other than the 3 LSBs
+        BRN     NEG             ; if negative, branching to NEG round processing
+        BRA     STORE           ; if positive, branching to STORE directly
 
 NEG     SUB     r4, r0, r4      ; negate the value
 
