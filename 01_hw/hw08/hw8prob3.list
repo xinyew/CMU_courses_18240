@@ -1,0 +1,33 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0500 31C0  START      LI      R7      
+0502 5300                     $5300   
+0504 3140             LI      R5      
+0506 5310                     $5310   
+0508 2100             MV      R4 R0   
+050A 28B8  LOOP       LW      R2 R7   
+050C 0000                     $0      
+050E 9800             BRN             
+0510 0516                     IF      
+0512 F800             BRA             
+0514 0518                     NEXT    
+0516 1082  IF         SUB     R2 R0 R2
+0518 0122  NEXT       ADD     R4 R4 R2
+051A 31F8             ADDI    R7 R7   
+051C 0002                     $2      
+051E 503D             SLT     R0 R7 R5
+0520 D800             BRNZ            
+0522 050A                     LOOP    
+0524 383C  FINISH     SW      R7 R4   
+0526 0000                     $0      
+0528 FE00             STOP            
+5300 0000             .DW     $0000   
+5302 FFFF             .DW     $FFFF   
+5304 0002             .DW     $0002   
+5306 FFFD             .DW     $FFFD   
+5308 0004             .DW     $0004   
+530A FFFB             .DW     $FFFB   
+530C 0006             .DW     $0006   
+530E FFF9             .DW     $FFF9   
+5310 0008             .DW     $0008   
+5312 FFF7             .DW     $FFF7   

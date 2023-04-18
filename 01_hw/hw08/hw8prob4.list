@@ -1,0 +1,44 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0300 2840  START      LW      R1 R0   
+0302 2000                     $2000   
+0304 30C0             LI      R3      
+0306 0000                     $0000   
+0308 3180             LI      R6      
+030A FFFF                     $FFFF   
+030C 31C0             LI      R7      
+030E 0004                     $4      
+0310 3080             LI      R2      
+0312 FFF8                     $FFF8   
+0314 5001  LOOP       SLT     R0 R0 R1
+0316 C800             BRZ             
+0318 0346                     DONE    
+031A 2918             LW      R4 R3   
+031C 2002                     $2002   
+031E 31C0             LI      R7      
+0320 0004                     $4      
+0322 9167             AND     R5 R4 R7
+0324 C800             BRZ             
+0326 032C                     MODIFY  
+0328 3120             ADDI    R4 R4   
+032A 0008                     $8      
+032C 9122  MODIFY     AND     R4 R4 R2
+032E 9800             BRN             
+0330 0336                     NEG     
+0332 F800             BRA             
+0334 0338                     STORE   
+0336 1104  NEG        SUB     R4 R0 R4
+0338 381C  STORE      SW      R3 R4   
+033A 4000                     $4000   
+033C 004E             ADD     R1 R1 R6
+033E 30D8             ADDI    R3 R3   
+0340 0002                     $2      
+0342 F800             BRA             
+0344 0314                     LOOP    
+0346 FE00  DONE       STOP            
+2000 0005             .DW     $5      
+2002 0001             .DW     $0001   
+2004 0101             .DW     $0101   
+2006 0005             .DW     $0005   
+2008 0105             .DW     $0105   
+200A 8001             .DW     $8001   
