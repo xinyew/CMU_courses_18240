@@ -2,9 +2,9 @@
 ; 8 samples and write the average value to DAC
 
         .ORG    $500
-Init    MV r1, r0                       ; r1 counts the elements
+Init    MV r1, r0                       ; r1 counts the samples number
         ADDI r7, r0, $4                 ; r7 = 4 for shifting
-        LI r2, $1                       ; r2: enable bit
+        LI r2, $1                       ; r2 enable bit
         SW r0, r2, $0010                ; set ADC enable bit
 
 Wait    LW r2, r0, $0022                ; check data ready bit
@@ -13,6 +13,7 @@ Wait    LW r2, r0, $0022                ; check data ready bit
         BRN Shift                       ; if set, start Shifting
         BRA Wait                        ; otherwise, keep busy-waiting
 
+        ; 7 loops in total. Shift Recent[6/5/4...0] to Recent[7/6/5...1]
 Shift   SLT r0, r4, r0                  
         BRN RdADC                       ; RdADC if r4 < 0
         LW r3, r4, Recent               ; r3 = Recent[6/5/4...] 
@@ -27,7 +28,7 @@ RdADC   LW r3, r0, $0020                ; r3 = ADC
 
 WtDAC   SRAI r5, r5, $3                 ; r5 = r5 // 8
         LI  r6, $8000                   ; DAC enable bit
-        SW  r0, r6, $0012               ; store the DAC enable bit
+        SW  r0, r6, $0012               ; set the DAC enable bit
         SW  r0, r5, $0014               ; store the calculated value
 
 
